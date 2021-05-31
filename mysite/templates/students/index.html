@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Khaatumo State University</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+  </head>
+  <body>
+
+    <div class="topnav">
+  <a class="active" href="# home">Home</a>
+  <a href="{% url 'about' %}">About</a>
+  <a href="{% url 'contact' %}">Contact</a>
+  <div class="login-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+    <h1>Welcome to Khaatumo State University</h1>
+
+    <div class="header">
+  <h3>Overview</h3>
+  <p>Khaatumo State University is located in Somalia.  It is a world-class higher education institution that offers undergraduate and graduate degrees in many fields -
+  Islamic Studies, Education, Business Management, Mathematics, Science, Computer Science, Engineering, Health Sciences, and important languages - Somali, Arabic, Turkish, and English.</p>
+
+
+<div class="row">
+  <div class="column" style="background-color:#FF6600;">Degrees</div>
+  <div class="column" style="background-color:#FF6600;">Programs</div>
+  <div class="column" style="background-color:#FF6600;">Courses</div>
+</div>
+
+<div class="footer">
+  <h3>Khaatumo State University</h3>
+</div
+
+  </body>
+</html>
